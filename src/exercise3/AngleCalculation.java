@@ -11,10 +11,10 @@ public class AngleCalculation {
         char type= in.charAt(0);
         do{
             if(type=='d'){
-              double R=value*Math.PI/180/2;
+              double R=value*3.14/180/2;
                 System.out.println("Angel: "+ R);
             }else if(type=='r'){
-                double R=2*value*57.29578;
+                double R=2*value*57.29;
                 System.out.println("Angel: "+ R);
             }break;
         }while(type=='d' || type=='r');
