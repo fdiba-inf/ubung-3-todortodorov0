@@ -6,15 +6,15 @@ public class AngleCalculation {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        float value= input.nextFloat();
+        double value= input.nextDouble();
         String in= input.next();
         char type= in.charAt(0);
         do{
             if(type=='d'){
-              float R=value*3.14/180/2;
+                double R=value*3.1415/180/2;
                 System.out.println("Angel: "+ R);
             }else if(type=='r'){
-                float R=2*value*57.29;
+                double R=2*value*57.295;
                 System.out.println("Angel: "+ R);
             }break;
         }while(type=='d' || type=='r');
