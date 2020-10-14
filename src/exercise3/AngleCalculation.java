@@ -6,7 +6,7 @@ public class AngleCalculation {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double value= input.nextDouble();
+        float value= input.nextDouble();
         String in= input.next();
         char type= in.charAt(0);
         do{
