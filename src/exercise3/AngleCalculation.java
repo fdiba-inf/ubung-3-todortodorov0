@@ -19,7 +19,7 @@ public class AngleCalculation {
             }else if(type=='r'){
                 double R=2*value*57.295;
                 System.out.println("Angel: "+ R);
-            }
+            }break;
         }while(type=='d' || type=='r');
 
 
