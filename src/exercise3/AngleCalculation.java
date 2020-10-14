@@ -8,12 +8,13 @@ public class AngleCalculation {
         Scanner input = new Scanner(System.in);
         double value;
         char type;
+        value= input.nextDouble();
+        String in= input.next();
+        type= in.charAt(0);
         do{
-            value= input.nextDouble();
-            String in= input.next();
-            type= in.charAt(0);
+            
             if(type=='d'){
-                double R=value*3.1415/180/2;
+                double R=value*3.141/180/2;
                 System.out.println("Angel: "+ R);
             }else if(type=='r'){
                 double R=2*value*57.295;
