@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class Triangle {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double a= input.nextDouble();
-        double b= input.nextDouble();
-        double c= input.nextDouble();
-        boolean b1 = a > 0 && b > 0 && c > 0 && b+c>a && a+c>b && a+b>c;
+        double a;
+        double b;
+        double c;
         do{
+            a= input.nextDouble();
+            b= input.nextDouble();
+            c= input.nextDouble();
+            boolean b1 = a > 0 && b > 0 && c > 0 && b+c>a && a+c>b && a+b>c;
             if(b1) {
                 double P = (a + b + c) / 2;
                 double Area = Math.sqrt(P * (P - a) * (P - b) * (P - c));
@@ -24,8 +27,7 @@ public class Triangle {
                 }
             }else{
                 System.out.println("Values are not correct!");
-            }break;
-        }while(b1);
+            }
+        }while(a > 0 && b > 0 && c > 0 && b+c>a && a+c>b && a+b>c);
         }
     }
-
