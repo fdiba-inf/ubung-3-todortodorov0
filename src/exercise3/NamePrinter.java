@@ -8,7 +8,7 @@ public class NamePrinter {
         String name=input.next();
         for(int i=0;i<name.length();i++){
             char letter=name.charAt(i);
-            System.out.println("*"+letter+"*");
+            System.out.println("* "+letter+" *");
         }
 
     }
