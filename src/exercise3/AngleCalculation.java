@@ -15,10 +15,10 @@ public class AngleCalculation {
             
             if(type=='d'){
                 double R=value*3.14/180/2;
-                System.out.println("Angel: "+ R);
+                System.out.println("Angle: "+ R);
             }else if(type=='r'){
                 double R=2*value*57.295;
-                System.out.println("Angel: "+ R);
+                System.out.println("Angle: "+ R);
             }break;
         }while(type=='d' || type=='r');
 
